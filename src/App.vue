@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import UnityPlayer from './components/UnityPlayer.vue';
 
 // Unity configuration - Exactly matching your exported index.html
@@ -27,17 +26,6 @@ const unityConfig = {
   }
 };
 
-const unityPlayerRef = ref<any>(null);
-
-const handleUnityMessage = (msg: string) => {
-  console.log('Received from App.vue:', msg);
-};
-
-const sendDemoMessage = () => {
-  // Example: Tell Unity to change object color
-  // unityPlayerRef.value?.sendMessage('Cube', 'ChangeColor', 'Red');
-  alert('Attempting to send message to Unity. Ensure your Unity build matches the method names!');
-};
 </script>
 
 <template>
@@ -45,7 +33,6 @@ const sendDemoMessage = () => {
     <main class="main-content">
       <div class="unity-wrapper">
         <UnityPlayer 
-          ref="unityPlayerRef"
           :loader-url="unityConfig.loaderUrl"
           :config="unityConfig.config"
         />
