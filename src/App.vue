@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import DeviceRestrictionOverlay from './components/DeviceRestrictionOverlay.vue';
 </script>
 
 <template>
   <RouterView />
+  <DeviceRestrictionOverlay />
 </template>
 
 <style>

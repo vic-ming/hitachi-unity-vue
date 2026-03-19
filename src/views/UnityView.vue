@@ -1,7 +1,24 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, onMounted, onUnmounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import UnityPlayer from '../components/UnityPlayer.vue';
+
+onMounted(() => {
+  const elem = document.documentElement;
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen().catch((err) => {
+      console.warn(`Error attempting to enable fullscreen: ${err.message}`);
+    });
+  }
+});
+
+onUnmounted(() => {
+  if (document.fullscreenElement && document.exitFullscreen) {
+    document.exitFullscreen().catch(err => {
+      console.warn(`Error attempting to disable fullscreen: ${err.message}`);
+    });
+  }
+});
 
 const route = useRoute();
 const router = useRouter();

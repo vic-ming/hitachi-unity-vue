@@ -117,6 +117,7 @@ function enter(id: string) {
   width: calc(700px / 2880px * 100vw);
   height: calc(700px / 2880px * 100vw);
   background: transparent;
+  transition: opacity 3s ease;
 }
 
 .card-bg {
@@ -143,7 +144,9 @@ function enter(id: string) {
   transition: opacity 0.2s ease;
   pointer-events: none;
 }
-
+.entry-card:active .card-img{
+  opacity: 0.3;
+}
 .entry-card:active .card-bg::after {
   opacity: 1;
 }
@@ -163,6 +166,7 @@ function enter(id: string) {
 .card-img {
   width: auto;
   height:calc(565px / 2880px * 100vw);
+  transition: opacity 3s ease;
 }
 
 .card-title {
