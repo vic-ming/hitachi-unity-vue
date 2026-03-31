@@ -1,0 +1,14 @@
+{
+    "guid": "HIT-09",
+    "presetData": "{\"Ceiling\":{\"save_MaterialGUID\":{\"0\":\"174e2e2a-cffb-48b8-8297-2281c33eeeb3\",\"1\":\"33faa892-943d-4b43-802d-b74400dbb5c1\"},\"save_ModelGUID\":\"guid-ceiling-hit09\",\"save_LightGUID\":\"guid_Light_White\"},\"Door\":{\"save_MaterialGUID\":{\"0\":\"7e87ddb5-7e13-48a8-b31b-94df1de216d7\"},\"save_ModelGUID\":null,\"save_LightGUID\":null},\"FrontWall\":{\"save_MaterialGUID\":{\"0\":\"1126eec8-b595-4941-9b78-817d1f272ffd\"},\"save_ModelGUID\":null,\"save_LightGUID\":null},\"SideWall_Right\":{\"save_MaterialGUID\":{\"0\":\"7e87ddb5-7e13-48a8-b31b-94df1de216d7\",\"1\":\"7e87ddb5-7e13-48a8-b31b-94df1de216d7\",\"2\":\"7e87ddb5-7e13-48a8-b31b-94df1de216d7\"},\"save_ModelGUID\":\"guid-sidewall-right-HIT\",\"save_LightGUID\":null},\"SideWall_Left\":{\"save_MaterialGUID\":{\"0\":\"654cd7e4-ac76-4dcc-af3e-607302023039\",\"1\":\"7e87ddb5-7e13-48a8-b31b-94df1de216d7\",\"2\":\"654cd7e4-ac76-4dcc-af3e-607302023039\"},\"save_ModelGUID\":\"guid-sidewall-left-HIT\",\"save_LightGUID\":null},\"BackWall\":{\"save_MaterialGUID\":{\"0\":\"7e87ddb5-7e13-48a8-b31b-94df1de216d7\",\"1\":\"7e87ddb5-7e13-48a8-b31b-94df1de216d7\",\"2\":\"654cd7e4-ac76-4dcc-af3e-607302023039\"},\"save_ModelGUID\":\"guid-backwall-HIT\",\"save_LightGUID\":null},\"Floor\":{\"save_MaterialGUID\":{\"0\":\"6b597c7a-1443-4647-b50f-d2a18e6b5a15\"},\"save_ModelGUID\":\"guid-floor-single-basic\",\"save_LightGUID\":null},\"ControlPanel\":{\"save_MaterialGUID\":{},\"save_ModelGUID\":\"guid-controlpanel-rotate-opyjl\",\"save_LightGUID\":null},\"SideControlPanel\":{\"save_MaterialGUID\":{},\"save_ModelGUID\":\"guid-sidecontrolpanel-none\",\"save_LightGUID\":null},\"HandRail\":{\"save_MaterialGUID\":{},\"save_ModelGUID\":\"guid-handrail-none\",\"save_LightGUID\":null},\"Strip\":{\"save_MaterialGUID\":{},\"save_ModelGUID\":\"guid-strip-none\",\"save_LightGUID\":null},\"Light\":{\"save_MaterialGUID\":{},\"save_ModelGUID\":null,\"save_LightGUID\":null},\"Entrance_Door\":{\"save_MaterialGUID\":{\"0\":\"a28a7425-277b-4c25-afec-6b7636b849d7\"},\"save_ModelGUID\":null,\"save_LightGUID\":null},\"Entrance_Door_Frame\":{\"save_MaterialGUID\":{\"0\":\"8083437e-de18-41b6-9d32-80a2f5191fbe\"},\"save_ModelGUID\":\"guid-entrance-frame-narrow\",\"save_LightGUID\":null},\"Entrance_Door_Sill\":{\"save_MaterialGUID\":{\"0\":\"71923d5a-d1a5-4676-b8b7-f10f314fa7e1\"},\"save_ModelGUID\":null,\"save_LightGUID\":null},\"Entrance_IND\":{\"save_MaterialGUID\":{},\"save_ModelGUID\":\"guid-IND-DIG-JD_Hair\",\"save_LightGUID\":null},\"HallLight\":{\"save_MaterialGUID\":{},\"save_ModelGUID\":\"guid-hall-light-L-61\",\"save_LightGUID\":null}}",
+    "title": {
+        "CH": "HIT-09",
+        "JP": "HIT-09",
+        "EN": "HIT-09"
+    },
+    "slogan": {
+        "CH": "舒適搭乘，人機溝通",
+        "JP": "快適, ヒューマンインタフェース",
+        "EN": "Comfortable ride, human-machine communication"
+    }
+}
