@@ -1,24 +1,9 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted } from 'vue';
+import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import UnityPlayer from '../components/UnityPlayer.vue';
 
-onMounted(() => {
-  const elem = document.documentElement;
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen().catch((err) => {
-      console.warn(`Error attempting to enable fullscreen: ${err.message}`);
-    });
-  }
-});
 
-onUnmounted(() => {
-  if (document.fullscreenElement && document.exitFullscreen) {
-    document.exitFullscreen().catch(err => {
-      console.warn(`Error attempting to disable fullscreen: ${err.message}`);
-    });
-  }
-});
 
 const route = useRoute();
 const router = useRouter();
@@ -84,13 +69,13 @@ function goBack() {
       <button class="back-btn-alt" @click="goBack">返回首頁</button>
     </div>
 
-    <!-- Unity Player -->
-    <template v-else>
+    <!-- Unity Player (16:9 強制比例) -->
+    <div v-else class="unity-stage">
       <UnityPlayer
         :loader-url="currentBuild.loaderUrl"
         :config="currentBuild.config"
       />
-    </template>
+    </div>
   </div>
 </template>
 
@@ -99,8 +84,18 @@ function goBack() {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: #000;
+  background: #fff;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 16:9 強制比例容器，會自動 letterbox / pillarbox */
+.unity-stage {
+  aspect-ratio: 16 / 9;
+  width: min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
 }
 
 .not-found {
