@@ -5,13 +5,13 @@ const router = useRouter();
 
 const entries = [
   {
-    id: 'unity-build',
+    id: 'Hit',
     img: '/hit-img.png',
     title: 'hit-title.png',
     sub: '(填入這個系列的特點)'
   },
   {
-    id: 'unity-build-2',
+    id: 'EAS',
     img: '/eas-img.png',
     title: 'eas-title.png',
     sub: '(填入這個系列的特點)'

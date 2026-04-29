@@ -8,11 +8,9 @@ const unityMiddleware = () => ({
     server.middlewares.use((req: any, res: any, next: any) => {
       const url = req.url || '';
       if (url.endsWith('.unityweb') || url.endsWith('.data')) {
-        res.setHeader('Content-Encoding', 'gzip');
         res.setHeader('Content-Type', 'application/octet-stream');
       }
       if (url.endsWith('.wasm')) {
-        res.setHeader('Content-Encoding', 'gzip');
         res.setHeader('Content-Type', 'application/wasm');
       }
       next();

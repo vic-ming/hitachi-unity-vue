@@ -12,15 +12,15 @@ const buildId = computed(() => route.params.buildId as string);
 
 // Map each buildId to its Unity config
 const buildConfigs: Record<string, { loaderUrl: string; config: any; label: string }> = {
-  'unity-build': {
+  Hit: {
     label: '智慧選配編輯器',
-    loaderUrl: '/unity-build/Build.loader.js',
+    loaderUrl: '/Hit/Build.loader.js',
     config: {
       arguments: [],
-      dataUrl: '/unity-build/Build.data.unityweb',
-      frameworkUrl: '/unity-build/Build.framework.js.unityweb',
-      codeUrl: '/unity-build/Build.wasm.unityweb',
-      streamingAssetsUrl: '/unity-build/StreamingAssets',
+      dataUrl: '/Hit/Build.data.unityweb',
+      frameworkUrl: '/Hit/Build.framework.js.unityweb',
+      codeUrl: '/Hit/Build.wasm.unityweb',
+      streamingAssetsUrl: '/Hit/StreamingAssets',
       companyName: 'Kingone',
       productName: '日立永大電梯_智慧選配編輯器',
       productVersion: '1.1.8',
@@ -32,15 +32,15 @@ const buildConfigs: Record<string, { loaderUrl: string; config: any; label: stri
       },
     },
   },
-  'unity-build-2': {
+  EAS: {
     label: '智慧選配編輯器 II',
-    loaderUrl: '/unity-build-2/Build.loader.js',
+    loaderUrl: '/EAS/Build.loader.js',
     config: {
       arguments: [],
-      dataUrl: '/unity-build-2/Build.data.unityweb',
-      frameworkUrl: '/unity-build-2/Build.framework.js.unityweb',
-      codeUrl: '/unity-build-2/Build.wasm.unityweb',
-      streamingAssetsUrl: '/unity-build-2/StreamingAssets',
+      dataUrl: '/EAS/Build.data.unityweb',
+      frameworkUrl: '/EAS/Build.framework.js.unityweb',
+      codeUrl: '/EAS/Build.wasm.unityweb',
+      streamingAssetsUrl: '/EAS/StreamingAssets',
       companyName: 'Kingone',
       productName: '日立永大電梯_智慧選配編輯器 II',
       productVersion: '1.0.0',
