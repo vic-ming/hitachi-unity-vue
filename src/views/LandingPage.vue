@@ -6,14 +6,14 @@ const router = useRouter();
 const entries = [
   {
     id: 'Hit',
-    img: '/hit-img.png',
-    title: 'hit-title.png',
+    img: '/images/hit-img.png',
+    title: '/images/hit-title.png',
     sub: '(填入這個系列的特點)'
   },
   {
     id: 'EAS',
-    img: '/eas-img.png',
-    title: 'eas-title.png',
+    img: '/images/eas-img.png',
+    title: '/images/eas-title.png',
     sub: '(填入這個系列的特點)'
   },
 ];
@@ -29,8 +29,8 @@ function enter(id: string) {
     <!-- Header -->
     <header class="landing-header">
       <div class="brand">
-        <img class="brand-title" src="/title.png" alt="title">
-        <img class="brand-sub-title" src="/sub-title.png" alt="sub-title">
+        <img class="brand-title" src="/images/title.png" alt="title">
+        <img class="brand-sub-title" src="/images/sub-title.png" alt="sub-title">
       </div>    
     </header>
 
@@ -49,7 +49,7 @@ function enter(id: string) {
           <div class="card-sub">{{ entry.sub }}</div>
         </div>
         <div class="card-enter">
-          <img src="/cursor.svg" alt="cursor">
+          <img src="/images/cursor.svg" alt="cursor">
           <div class="card-enter-label">點擊進入</div>
         </div>
       </button>
@@ -64,7 +64,7 @@ function enter(id: string) {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background: url('/bg.png') center center / cover no-repeat;
+  background: url('/images/bg.png') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;

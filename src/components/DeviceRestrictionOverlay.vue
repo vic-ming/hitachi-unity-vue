@@ -22,7 +22,7 @@ onUnmounted(() => {
 <template>
   <div v-if="isRestricted" class="device-restriction-overlay">
     <div class="restriction-content">
-      <img class="restriction-icon" src="/limit.png" alt="limit">
+      <img class="restriction-icon" src="/images/limit.png" alt="limit">
       <div class="restriction-text">
         <p>本系統僅支援電腦</p>
         <p>請更換裝置開啟</p>
