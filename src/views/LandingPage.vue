@@ -105,6 +105,7 @@ function enter(id: string) {
   width: 100%;
   flex: 1;
   justify-content: center;
+  margin-bottom: 230px;
 }
 
 .entry-card {
