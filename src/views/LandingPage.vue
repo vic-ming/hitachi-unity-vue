@@ -8,13 +8,13 @@ const entries = [
     id: 'Hit',
     img: '/images/hit-img.png',
     title: '/images/hit-title.png',
-    sub: '(填入這個系列的特點)'
+    sub: ''
   },
   {
     id: 'EAS',
     img: '/images/eas-img.png',
     title: '/images/eas-title.png',
-    sub: '(填入這個系列的特點)'
+    sub: ''
   },
 ];
 
@@ -45,7 +45,7 @@ function enter(id: string) {
         <div class="card-bg"></div>
         <div class="card-content">   
           <img class="card-img" :src="entry.img" alt="">
-          <img class="card-title" :src="entry.title" alt="">
+          <img class="card-title" :class="entry.id === 'Hit' ? 'hit' : ''" :src="entry.title" alt="">
           <div class="card-sub">{{ entry.sub }}</div>
         </div>
         <div class="card-enter">
@@ -55,6 +55,11 @@ function enter(id: string) {
       </button>
       
     </main>
+
+
+    <img class="suggestion" src="/images/suggestion.png" alt="">
+    
+    <footer>※ 本系統顏色會依使用者顯示設備不同<br>而有所差異,相關意匠僅供參考</footer>
 
   </div>
 </template>
@@ -78,7 +83,7 @@ function enter(id: string) {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: calc(60px / 2880px * 100vw) 0 calc(200px / 2880px * 100vw) 0;
+  padding: calc(60px / 2880px * 100vw) 0 0 0;
 }
 
 .brand {
@@ -93,7 +98,7 @@ function enter(id: string) {
 }
 
 .brand-sub-title {
-  width: calc(730px / 2880px * 100vw);
+  width: calc(860px / 1920px * 100vw);
 }
 
 /* ── Entry Cards ─────────────────────────────────── */
@@ -101,7 +106,7 @@ function enter(id: string) {
   position: relative;
   z-index: 1;
   display: flex;
-  gap: calc(570px / 2880px * 100vw);
+  gap: calc(700px / 2880px * 100vw);
   width: 100%;
   flex: 1;
   justify-content: center;
@@ -115,8 +120,8 @@ function enter(id: string) {
   padding: 0;
   cursor: pointer;
   color: #fff;
-  width: calc(700px / 2880px * 100vw);
-  height: calc(700px / 2880px * 100vw);
+  width: calc(464px / 1920px * 100vw);
+  height: calc(464px / 1920px * 100vw);
   background: transparent;
   transition: opacity 3s ease;
 }
@@ -131,8 +136,8 @@ function enter(id: string) {
   border-radius: calc(40px / 2880px * 100vw);
   box-shadow: 0px 0px calc(16px / 2880px * 100vw) 0px #00000033;
   transform: rotate(45deg);
-  width: calc(700px / 2880px * 100vw);
-  height: calc(700px / 2880px * 100vw);
+  width: calc(464px / 1920px * 100vw);
+  height: calc(464px / 1920px * 100vw);
 }
 
 .card-bg::after {
@@ -171,9 +176,13 @@ function enter(id: string) {
 }
 
 .card-title {
-  width: calc(250px / 2880px * 100vw);
+  width: calc(340px / 1920px * 100vw);
   height:auto;
   position: absolute;
+}
+
+.card-title.hit {
+  width: calc(280px / 1920px * 100vw);
 }
 
 .card-sub {
@@ -186,7 +195,7 @@ function enter(id: string) {
 
 .card-enter {
   position: absolute;
-  bottom: calc(-230px / 2880px * 100vw);
+  bottom: calc(-12px / 2880px * 100vw);
   width: 100%;
   z-index: 2;
   display: flex;
@@ -206,6 +215,20 @@ function enter(id: string) {
   font-size: calc(36px / 2880px * 100vw);
   font-weight: 400;
   color: #595757;
+}
+.suggestion{
+  position: absolute;
+  bottom: 32px;
+  right: 40px;
+  width: calc(295px / 1920px * 100vw);
+}
+footer{
+  color: #00000040;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  bottom: 32px;
 }
 
 </style>
