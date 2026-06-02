@@ -51,13 +51,13 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build.loader.js";
+      var buildUrl = "";
+      var loaderUrl = "Build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Build.data.unityweb",
-        frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
-        codeUrl: buildUrl + "/Build.wasm.unityweb",
+        dataUrl: "Build.data.unityweb",
+        frameworkUrl: "Build.framework.js.unityweb",
+        codeUrl: "Build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kingone",
         productName: "日立電梯_智慧選配編輯器",
@@ -112,7 +112,7 @@
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
 
               }).catch((message) => {

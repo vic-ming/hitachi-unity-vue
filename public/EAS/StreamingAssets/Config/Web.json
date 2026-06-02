@@ -1,0 +1,4 @@
+{
+    "historyOrderUrl": "https://vision.hitachi-yungtay.com.tw/api/v1/history-orders",
+    "historyOrderRequestTimeout": 30
+}

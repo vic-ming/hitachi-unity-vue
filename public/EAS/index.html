@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | 永大電梯_智慧選配編輯器</title>
+    <title>Unity Web Player | 日立電梯_智慧選配編輯器</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">永大電梯_智慧選配編輯器</div>
+        <div id="unity-build-title">日立電梯_智慧選配編輯器</div>
       </div>
     </div>
     <script>
@@ -51,16 +51,16 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build/Build.loader.js";
+      var buildUrl = "";
+      var loaderUrl = "Build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Build.data.unityweb",
-        frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
-        codeUrl: buildUrl + "/Build.wasm.unityweb",
+        dataUrl: "Build.data.unityweb",
+        frameworkUrl: "Build.framework.js.unityweb",
+        codeUrl: "Build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kingone",
-        productName: "永大電梯_智慧選配編輯器",
+        productName: "日立電梯_智慧選配編輯器",
         productVersion: "1.1.8",
         showBanner: unityShowBanner,
       };
@@ -112,7 +112,7 @@
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
 
               }).catch((message) => {

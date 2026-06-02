@@ -1,0 +1,7 @@
+{
+    "loginUrl": "https://vision.hitachi-yungtay.com.tw/api/v1/admin-auth/check-credentials",
+    "loginRequestTimeout": 10,
+    "gcpBucket": "hye-vision-prod",
+    "gcpRemotePrefix": "folder-test/.DB",
+    "gcpForceFullMirror": false
+}
